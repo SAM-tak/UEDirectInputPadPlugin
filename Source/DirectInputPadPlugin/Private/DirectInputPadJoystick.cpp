@@ -7,6 +7,7 @@
 #include "DirectInputPadPlugin.h"
 #include "DirectInputPadDevice.h"
 #include "DirectInputJoystick.h"
+#include "XInputJoystickEmu.h"
 
 //////////////////////////////////
 // UDirectInputPadJoystick

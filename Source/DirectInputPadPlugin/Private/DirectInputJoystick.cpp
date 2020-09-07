@@ -78,12 +78,10 @@ bool FDirectInputJoystick::Init(const DIDEVICEINSTANCE& joyins, FDirectInputDriv
 	}
 
 	// 軸の反転フラグ設定
-	//AxisReverseFlagMap_.SetNumUninitialized(DIGamePad_ROT_Z+1);
-	//for(uint32 i=DIGamePad_AXIS_X; i<=DIGamePad_ROT_Z; ++i)
-	//	AxisReverseFlagMap_[i] = false;
-
-	AxisReverseFlagMap_.Init(false,DIGamePad_ROT_Z+1);
-	AxisReverseFlagMap_[DIGamePad_AXIS_Y] = true; // Y軸はXInputと合わせるためにデフォルトで反転
+	AxisReverseFlagMap_.Init(false, DIGamePad_ROT_Z+1);
+	// Y軸はXInputと合わせるためにデフォルトで反転
+	AxisReverseFlagMap_[DIGamePad_AXIS_Y] = true;
+	AxisReverseFlagMap_[DIGamePad_ROT_Z] = true;
 
 	// 初期化
 	memset(&InitialJoyBuf_,0,sizeof(DIJOYSTATE));
@@ -104,7 +102,7 @@ bool FDirectInputJoystick::Init(const DIDEVICEINSTANCE& joyins, FDirectInputDriv
 			UE_LOG(LogDirectInputPadPlugin, Log, TEXT("DirectInput Joystick Create Fail. : %s"), joyins.tszProductName);
 			return false;
 		}
-	}while(true);
+	} while(true);
 
 	//	const string sFlag = (flags&DISCL_BACKGROUND)>0 ? "BACKGROUND" : "FOREGROUND";
 	UE_LOG(LogDirectInputPadPlugin, Log, TEXT("DirectInput Joystick Create Success. : %s"), joyins.tszProductName);
