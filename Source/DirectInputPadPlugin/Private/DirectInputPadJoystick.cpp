@@ -1,12 +1,12 @@
-﻿#include "DirectInputPadPluginPrivatePCH.h"
+#include "DirectInputPadJoystick.h"
+
+#include "DirectInputPadPluginPrivatePCH.h"
 
 #include "DirectInputPadSaveGame.h"
 
 #include "DirectInputPadPlugin.h"
 #include "DirectInputPadDevice.h"
 #include "DirectInputJoystick.h"
-
-#include "DirectInputPadJoystick.h"
 
 //////////////////////////////////
 // UDirectInputPadJoystick

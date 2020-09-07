@@ -1,4 +1,6 @@
-﻿#include "DirectInputPadPluginPrivatePCH.h"
+#include "DirectInputPadDevice.h"
+
+#include "DirectInputPadPluginPrivatePCH.h"
 
 #if WITH_EDITOR
 #include "MainFrame.h"
@@ -9,8 +11,6 @@
 #include "DirectInputDriver.h"
 #include "DirectInputJoystick.h"
 #include "XInputJoystickEmu.h"
-
-#include "DirectInputPadDevice.h"
 
 #include "Windows/AllowWindowsPlatformTypes.h"
 

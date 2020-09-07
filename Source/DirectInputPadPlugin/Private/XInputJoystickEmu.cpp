@@ -55,7 +55,7 @@ void FXInputJoystickEmu::SetAnalogMap(EXInputPadKeyNames eXIKey, FDIKeyMapInfo D
 	const bool bNegative				 = DIKeyInfo.bNegative_;
 
 	if(eDIKey<=DIGamePad_ROT_Z)
-	{// Ž²‚ðŽ²‚É
+	{// è»¸ã‚’è»¸ã«
 		switch(eXIKey)
 		{
 		case XIGamePad_LeftAnalogX:
@@ -90,7 +90,7 @@ void FXInputJoystickEmu::SetAnalogMap(EXInputPadKeyNames eXIKey, FDIKeyMapInfo D
 		}
 	}
 	else
-	{// ƒ{ƒ^ƒ“‚ðŽ²‚É
+	{// ãƒœã‚¿ãƒ³ã‚’è»¸ã«
 		switch(eXIKey)
 		{
 		case XIGamePad_LeftAnalogX:
