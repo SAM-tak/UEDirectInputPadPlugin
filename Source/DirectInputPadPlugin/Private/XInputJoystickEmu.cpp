@@ -26,9 +26,9 @@ void FXInputJoystickEmu::Init(TSharedRef<FDirectInputJoystick> DIPad)
 	SetButtonMap(XIGamePad_DPad_Right,		DIGamePad_POV_Right);
 	SetButtonMap(XIGamePad_DPad_Left,		DIGamePad_POV_Left);
 
-	SetButtonMap(XIGamePad_Button_A,		DIGamePad_Button1);
-	SetButtonMap(XIGamePad_Button_B,		DIGamePad_Button2);
-	SetButtonMap(XIGamePad_Button_X,		DIGamePad_Button3);
+	SetButtonMap(XIGamePad_Button_A,		DIGamePad_Button2);
+	SetButtonMap(XIGamePad_Button_B,		DIGamePad_Button3);
+	SetButtonMap(XIGamePad_Button_X,		DIGamePad_Button1);
 	SetButtonMap(XIGamePad_Button_Y,		DIGamePad_Button4);
 
 	SetButtonMap(XIGamePad_Button_LB,		DIGamePad_Button5);
