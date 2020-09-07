@@ -1,7 +1,8 @@
+#include "XInputJoystickEmu.h"
+
 #include "DirectInputPadPluginPrivatePCH.h"
 
 #include "DirectInputJoystick.h"
-#include "XInputJoystickEmu.h"
 
 namespace{
 const float AXIS_THRESHOLD = 0.6f;
